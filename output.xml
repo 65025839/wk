@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.6 on win32)" generated="2024-10-09T22:12:46.913517" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="C:\Users\huawei\Desktop\งาน\robot.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-10-09T22:12:47.251481" level="INFO">Opening browser 'chrome' to base url 'https://test.k6.io/browser.php'.</msg>
+<arg>https://test.k6.io/browser.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-09T22:12:47.251481" elapsed="2.670556"/>
+</kw>
+<test id="s1-t1" name="Test Checkbox Interaction" line="15">
+<kw name="Verify No Interaction On Checkbox">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:49.988316" level="INFO">${text} = No interaction</msg>
+<var>${text}</var>
+<arg>//p[@id='checkbox-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:49.927607" elapsed="0.060709"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:49.988316" level="INFO">Checkbox info display text: No interaction</msg>
+<arg>Checkbox info display text: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:49.988316" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>No interaction</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:49.989321" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:49.925032" elapsed="0.064289"/>
+</kw>
+<kw name="Check Checkbox">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:49.991326" level="INFO">Clicking element '//input[@id='checkbox1']'.</msg>
+<arg>//input[@id='${CHECKBOX_ID}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:49.990323" elapsed="0.096774"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.107848" level="INFO">${text} = Thanks for checking the box</msg>
+<var>${text}</var>
+<arg>//p[@id='checkbox-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.087097" elapsed="0.020751"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.108850" level="INFO">Checkbox info display text after check: Thanks for checking the box</msg>
+<arg>Checkbox info display text after check: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.108850" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Thanks for checking the box</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.108850" elapsed="0.001012"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:49.989321" elapsed="0.120541"/>
+</kw>
+<kw name="Uncheck Checkbox">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.115860" level="INFO">Clicking element '//input[@id='checkbox1']'.</msg>
+<arg>//input[@id='${CHECKBOX_ID}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.114868" elapsed="0.056943"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.191391" level="INFO">${text} = You've just unchecked the box</msg>
+<var>${text}</var>
+<arg>//p[@id='checkbox-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.172321" elapsed="0.019070"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.192387" level="INFO">Checkbox info display text after uncheck: You've just unchecked the box</msg>
+<arg>Checkbox info display text after uncheck: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.192387" elapsed="0.000508"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>You've just unchecked the box</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.192895" elapsed="0.000518"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:50.110865" elapsed="0.082548"/>
+</kw>
+<doc>Verify checkbox interactions</doc>
+<status status="PASS" start="2024-10-09T22:12:49.924038" elapsed="0.269895"/>
+</test>
+<test id="s1-t2" name="Test Increment Counter" line="21">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<kw name="Capture Page Screenshot">
+<msg time="2024-10-09T22:12:50.297801" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.297801" elapsed="0.001001">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.295266" elapsed="0.003536">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.294132" elapsed="0.004670">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.294132" elapsed="0.005664">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.293060" elapsed="0.006736">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.291550" elapsed="0.008246">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.291550" elapsed="0.009249">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.290556" elapsed="0.010243">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.290556" elapsed="0.010243">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.289551" elapsed="0.012249">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.288558" elapsed="0.013242">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.288558" elapsed="0.013242">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.288558" elapsed="0.013242">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.287553" elapsed="0.015248">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.287553" elapsed="0.015248">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.286544" elapsed="0.016257">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.286544" elapsed="0.016257">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.285034" elapsed="0.017767">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.285034" elapsed="0.019076">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.285034" elapsed="0.019076">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.285034" elapsed="0.019076">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.284023" elapsed="0.020597">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.284023" elapsed="0.020597">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.283516" elapsed="0.021104">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.282301" elapsed="0.022319">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.281323" elapsed="0.024310">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.276443" elapsed="0.029190">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.276443" elapsed="0.029190">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.276443" elapsed="0.029190">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.274932" elapsed="0.031694">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.274932" elapsed="0.032201">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.274932" elapsed="0.032201">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.274932" elapsed="0.033214">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.273934" elapsed="0.034212">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.273934" elapsed="0.034212">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.273934" elapsed="0.035224">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.272936" elapsed="0.038258">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.272936" elapsed="0.040245">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.271937" elapsed="0.042709">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.271937" elapsed="0.042709">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.270932" elapsed="0.044894">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.270932" elapsed="0.044894">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.270932" elapsed="0.045903">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.269935" elapsed="0.046900">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.269935" elapsed="0.047436">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.268938" elapsed="0.048433">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.268938" elapsed="0.048433">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.268938" elapsed="0.048433">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.267923" elapsed="0.049448">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.267923" elapsed="0.050777">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.266894" elapsed="0.051806">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.266894" elapsed="0.051806">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.265378" elapsed="0.053322">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.265378" elapsed="0.053322">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.264366" elapsed="0.055347">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.262385" elapsed="0.057328">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.260355" elapsed="0.060367">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.259845" elapsed="0.060877">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.258857" elapsed="0.061865">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.257848" elapsed="0.062874">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.256836" elapsed="0.064877">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.256836" elapsed="0.064877">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.255328" elapsed="0.066385">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.255328" elapsed="0.066385">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.255328" elapsed="0.066385">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.254320" elapsed="0.067393">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.254320" elapsed="0.068390">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.253815" elapsed="0.068895">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.252694" elapsed="0.070016">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.251357" elapsed="0.071353">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.251357" elapsed="0.071353">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.250364" elapsed="0.072346">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.250364" elapsed="0.073347">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.248389" elapsed="0.075322">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.244773" elapsed="0.078938">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.243774" elapsed="0.080940">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.242777" elapsed="0.081937">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.241778" elapsed="0.082936">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.241778" elapsed="0.082936">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.240775" elapsed="0.084946">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.239778" elapsed="0.085943">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.239778" elapsed="0.085943">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.238765" elapsed="0.086956">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.238765" elapsed="0.086956">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.215538" elapsed="0.110183">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.214539" elapsed="0.112332">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.213583" elapsed="0.113410">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.209539" elapsed="0.118494">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.209539" elapsed="0.119967">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.208529" elapsed="0.120977">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.207526" elapsed="0.121980">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.206502" elapsed="0.125030">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.206502" elapsed="0.126022">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.204978" elapsed="0.127546">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.203141" elapsed="0.129383">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.202127" elapsed="0.130397">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.201114" elapsed="0.132404">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.201114" elapsed="0.132404">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${filename}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.200036" elapsed="0.133482">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<arg>${SCREENSHOT_BEFORE}</arg>
+<status status="FAIL" start="2024-10-09T22:12:50.198863" elapsed="0.134655">Maximum limit of started keywords and control structures exceeded.</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${COUNTER_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-09T22:12:50.334522" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Clicked Increment Button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-10-09T22:12:50.334522" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-09T22:12:50.334522" elapsed="0.000995"/>
+</kw>
+<kw name="Verify Counter Increment">
+<status status="NOT RUN" start="2024-10-09T22:12:50.335517" elapsed="0.001011"/>
+</kw>
+<kw name="Capture Page Screenshot">
+<arg>${SCREENSHOT_AFTER}</arg>
+<status status="NOT RUN" start="2024-10-09T22:12:50.337041" elapsed="0.000000"/>
+</kw>
+<doc>Verify counter increment</doc>
+<status status="FAIL" start="2024-10-09T22:12:50.195251" elapsed="0.141790">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<test id="s1-t3" name="Test Input Text Field" line="30">
+<kw name="Verify No Interaction On Input Text">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.365326" level="INFO">${text} = No interaction</msg>
+<var>${text}</var>
+<arg>//p[@id='text-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.338049" elapsed="0.027277"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.366833" level="INFO">Input text info display: No interaction</msg>
+<arg>Input text info display: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.365326" elapsed="0.001507"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>No interaction</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.366833" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:50.338049" elapsed="0.028784"/>
+</kw>
+<kw name="Focus On Input Text Field">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.368876" level="INFO">Executing JavaScript:
+document.getElementById('text1').focus();
+Without any arguments.</msg>
+<arg>document.getElementById('${TEXT_INPUT_ID}').focus();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.367866" elapsed="0.016494"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.405616" level="INFO">${text} = focused on input text field</msg>
+<var>${text}</var>
+<arg>//p[@id='text-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.384360" elapsed="0.021256"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.405616" level="INFO">Input text info display after focus: focused on input text field</msg>
+<arg>Input text info display after focus: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.405616" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>focused on input text field</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.406610" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:50.367866" elapsed="0.038744"/>
+</kw>
+<kw name="Enter Text In Input Field">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.408128" level="INFO">Typing text 'Hello World' into text field '//input[@id='text1']'.</msg>
+<arg>//input[@id='${TEXT_INPUT_ID}']</arg>
+<arg>Hello World</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.407117" elapsed="0.112262"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.537337" level="INFO">${text} = Thanks for filling in the input text field</msg>
+<var>${text}</var>
+<arg>//p[@id='text-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.520383" elapsed="0.016954"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.538348" level="INFO">Input text info display after entering text: Thanks for filling in the input text field</msg>
+<arg>Input text info display after entering text: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.538348" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Thanks for filling in the input text field</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.538348" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:50.407117" elapsed="0.131231"/>
+</kw>
+<kw name="Verify Text After Input">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.554052" level="INFO">${text} = Thanks for filling in the input text field</msg>
+<var>${text}</var>
+<arg>//p[@id='text-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.539343" elapsed="0.014709"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:50.554052" level="INFO">Verifying text after input: Thanks for filling in the input text field</msg>
+<arg>Verifying text after input: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.554052" elapsed="0.000998"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Thanks for filling in the input text field</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.555050" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:50.539343" elapsed="0.015707"/>
+</kw>
+<kw name="Clear Input Field">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:50.555050" level="INFO">Typing text '""' into text field '//input[@id='text1']'.</msg>
+<arg>//input[@id='${TEXT_INPUT_ID}']</arg>
+<arg>""</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.555050" elapsed="0.085635"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-09T22:12:51.655802" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-09T22:12:50.641696" elapsed="1.014106"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:51.679900" level="INFO">${text} = Thanks for filling in the input text field</msg>
+<var>${text}</var>
+<arg>//p[@id='text-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.656789" elapsed="0.023111"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:51.679900" level="INFO">Input text info display after clearing: Thanks for filling in the input text field</msg>
+<arg>Input text info display after clearing: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.679900" elapsed="0.001228"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2024-10-09T22:12:51.681128" level="FAIL">Thanks for filling in the input text field != You've just removed everything from the input text field</msg>
+<arg>${text}</arg>
+<arg>You've just removed everything from the input text field</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2024-10-09T22:12:51.681128" elapsed="0.001010">Thanks for filling in the input text field != You've just removed everything from the input text field</status>
+</kw>
+<status status="FAIL" start="2024-10-09T22:12:50.555050" elapsed="1.127088">Thanks for filling in the input text field != You've just removed everything from the input text field</status>
+</kw>
+<kw name="Verify Text After Clear">
+<status status="NOT RUN" start="2024-10-09T22:12:51.682138" elapsed="0.001002"/>
+</kw>
+<doc>Verify input text interactions</doc>
+<status status="FAIL" start="2024-10-09T22:12:50.338049" elapsed="1.345091">Thanks for filling in the input text field != You've just removed everything from the input text field</status>
+</test>
+<test id="s1-t4" name="Test Select Box Interaction" line="39">
+<kw name="Verify No Selection In Select Box">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:51.721987" level="INFO">${text} = Nothing selected</msg>
+<var>${text}</var>
+<arg>//p[@id='select-multiple-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.686141" elapsed="0.035846"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:51.722988" level="INFO">Select box info display: Nothing selected</msg>
+<arg>Select box info display: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.721987" elapsed="0.001001"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Nothing selected</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.722988" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:51.685138" elapsed="0.038848"/>
+</kw>
+<kw name="Select Zero In Select Box">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:51.724992" level="INFO">Selecting options from selection list 'numbers-options' by value zero.</msg>
+<arg>${SELECT_BOX_ID}</arg>
+<arg>zero</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.724992" elapsed="0.116308"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:51.723986" elapsed="0.118760"/>
+</kw>
+<kw name="Verify Selection In Select Box">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-09T22:12:51.868816" level="INFO">${text} = Selected: zero</msg>
+<var>${text}</var>
+<arg>//p[@id='select-multiple-info-display']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.843255" elapsed="0.025561"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-09T22:12:51.869814" level="INFO">Verifying selection in select box: Selected: zero</msg>
+<arg>Verifying selection in select box: ${text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.869814" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>Selected: zero</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.870818" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-09T22:12:51.843255" elapsed="0.027563"/>
+</kw>
+<doc>Verify select box interactions</doc>
+<status status="PASS" start="2024-10-09T22:12:51.684139" elapsed="0.187674"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-09T22:12:51.873021" elapsed="2.246434"/>
+</kw>
+<status status="FAIL" start="2024-10-09T22:12:46.914917" elapsed="7.204538"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="2" skip="0" id="s1" name="Robot">Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
